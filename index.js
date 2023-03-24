@@ -53,8 +53,7 @@ function start() {
   let project_desc = prompt("Enter project description");
   let version = prompt("Enter project version");
   let author = prompt("Enter author's name");
-  console.log(version);
-  const result = createHTML(name, project_desc, version, author);
+  createHTML(name, project_desc, version, author);
 }
 
 function generateReadme() {
