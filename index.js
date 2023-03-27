@@ -20,7 +20,6 @@ function createHTML(name, project_desc, version, author) {
 </p>
 
 > ${project_desc}
-<p> ${project_desc} </p>
 <p><strong>Give a ⭐️ if this project helped you!</strong></p>
 <p><small>Created with ❤️ by <a href="https://www.npmjs.com/package/my-readme-latest" target="_blank"><i>my-readme-latest</i></a></small></p>
     `;
@@ -35,7 +34,6 @@ function createHTML(name, project_desc, version, author) {
 </p>
 
 > ${project_desc}
-  <p> ${project_desc} </p>
     <p>Version ${version}</p>
     <p>Author 👤 ${author}</p>
     <p><strong>Give a ⭐️ if this project helped you!</strong></p>
@@ -45,6 +43,7 @@ function createHTML(name, project_desc, version, author) {
  
   fs.writeFile("README.md", data, function (err) {
     if (err) throw err;
+    console.log("File created successfully");
   });
 }
 
